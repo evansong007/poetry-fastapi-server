@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "poetry-demo"
+version = "0.1.0"
+description = ""
+authors = ["Evan Song <evan.song@factset.com>"]
+packages = [{include = "poetry_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.94.0"
+uvicorn = "^0.21.0"
+psycopg2-binary = "^2.9.5"
+sqlmodel = "^0.0.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "scripts:start"
