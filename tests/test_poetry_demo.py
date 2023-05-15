@@ -1,4 +1,4 @@
-from poetry_demo import __version__
+from src import __version__
 
 
 def test_version():

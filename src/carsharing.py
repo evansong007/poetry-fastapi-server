@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI, HTTPException, Depends
 from sqlmodel import create_engine, SQLModel, Session, select
-from poetry_demo.schemas import CarInput, CarOutput, TripOutput, TripInput, Car, Trip
+from src.schemas import CarInput, CarOutput, TripOutput, TripInput, Car, Trip
 import psycopg2
 
 app = FastAPI(title="Car Sharing")
